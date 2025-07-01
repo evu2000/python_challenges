@@ -8,13 +8,13 @@ emails = [
     "pablo@yahoo.com"
 ]
 
-personal = ("gmail", "hotmail", "yahoo")
+personal_domains = ("gmail", "hotmail", "yahoo")
 
 personal_emails = []
 corporative_emails = []
 
 for email in emails:
-    for domain in personal:
+    for domain in personal_domains:
         if domain in email:
             personal_emails.append(email)
     if email not in personal_emails:
